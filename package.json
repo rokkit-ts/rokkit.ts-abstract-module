@@ -1,0 +1,26 @@
+{
+  "name": "rokkit.ts-abstract-module",
+  "version": "0.1.0",
+  "description": "Abstract module package for rokkit.ts module implementation. This package is a rokkit.ts module internal!",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rokkit-ts/rokkit.ts-abstract-module.git"
+  },
+  "keywords": [
+    "rokkit.ts",
+    "module",
+    "abstract",
+    "internal",
+    "use"
+  ],
+  "author": "Jann Deterling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rokkit-ts/rokkit.ts-abstract-module/issues"
+  },
+  "homepage": "https://github.com/rokkit-ts/rokkit.ts-abstract-module#readme"
+}
