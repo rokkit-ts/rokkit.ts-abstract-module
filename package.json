@@ -4,7 +4,8 @@
   "description": "Abstract module package for rokkit.ts module implementation. This package is a rokkit.ts module internal!",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/rokkit-ts/rokkit.ts-abstract-module/issues"
   },
-  "homepage": "https://github.com/rokkit-ts/rokkit.ts-abstract-module#readme"
+  "homepage": "https://github.com/rokkit-ts/rokkit.ts-abstract-module#readme",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
 }
