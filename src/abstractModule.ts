@@ -4,9 +4,18 @@
  * module to unify the functionalities and their apis.
  */
 export abstract class AbstractModule {
-  public abstract async initializeModule(configuration: any): Promise<void>;
-  public abstract async injectDependencies(
+  protected instanceMap: Map<string, any>;
+
+  constructor() {
+    this.instanceMap = new Map();
+  }
+
+  public async injectDependencies(
     instanceMap: Map<string, any>
-  ): Promise<void>;
+  ): Promise<void> {
+    this.instanceMap = instanceMap;
+  }
+
+  public abstract async runModule(configuration: any): Promise<void>;
   public abstract async shoutDownModule(): Promise<void>;
 }
