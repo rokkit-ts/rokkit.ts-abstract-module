@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "test": "echo 'no tests needed for a descriptive package!'",
     "build": "tsc --build tsconfig.json"
   },
   "repository": {
@@ -35,6 +35,7 @@
     "mocha-typescript": "^1.1.17",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
+    "ts-node": "^8.5.4",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
