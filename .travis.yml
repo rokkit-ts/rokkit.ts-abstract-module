@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "10.16"
+jobs:
+  include:
+    - stage: unit-tests
+      name: Unit Tests
+      script: npm test
+    - stage: deploy
+      name: Deploy to NPM
+      script: npm run-script build
+      deploy:
+        provider: npm
+        api_key:
+          secure: JKbvVg/fxQQIlc/WD+JcglV0i6X4GDg9PkmK+003Z3kIZPjqjEHQutYaD1F9ckByuFnk2xtGIBLX7n10eaqWLIdVFwQb2lNnSJo3cKqUn3Tdp0pHRMJS1RZbY6VC7odQ/P86HCaTIyat9kFsq/i4sklyfoMp+usBZBHazDwuDdVi343dlkGIeAJbfMCdACFZmDLbKw4oi6SPmBdvIdsNvKqsjIx5Uvlrndkd4RkWaHDGpEl3ythCWXv9lYw+j1RsKRqswABZAede6TcRS2+bvi+14IroEFdrpD0+GyPAjQIR47h6SO/iTrgSZKEI35dCZS1j7N1A0X5Talc0b5UgIufhZCz/Twam4LLeotKWirapF+oYcR8+2em8PQWaSX6WMVjlgRb6I5htP0hI8lfVvZGSQ1PsnFuZlZffhZpTrKDBU7zBs25yNbCPp1GqMPfhZcoJE9NYs8xsYNKZpwCnsgZ8qfZDOoDS0L+pcIPid4dYnUiy6NWSqNIbUqKcUS3Wbl4i3ekXQlaq6cPKfLyo6e9Q5p6y2/PXIAI1vmv0Va+Ny9BefMQb7vihy5xWsOgYWKH+//2UsUrErwGYBS8DtEG3SCvJziUBdYNqedSVTW0OeVitKD8EMQFgQBDHrc6S5PpggKa5YL12PpSKPE59xsz9z7uRMkvL7VJhANcXWDI=
+        on:
+          tags: true
+deploy:
+  api_key:
+    secure:
