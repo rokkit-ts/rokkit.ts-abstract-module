@@ -1,6 +1,6 @@
 {
   "name": "rokkit.ts-abstract-module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Abstract module package for rokkit.ts module implementation. This package is a rokkit.ts module internal!",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
