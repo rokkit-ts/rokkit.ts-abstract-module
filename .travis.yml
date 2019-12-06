@@ -9,10 +9,12 @@ jobs:
     - stage: deploy
       name: Deploy to NPM
       script: npm run-script build
-      deploy:
-        provider: npm
-        email: $NPM_USER
-        api_key: $NPM_TOKEN
-        on:
-          tags: true
-        skip_cleanup: true
+
+deploy:
+  provider: npm
+  email: "$NPM_USER"
+  api_key: "$NPM_TOKEN"
+  on:
+    tags: true
+    repo: rokkit-ts/rokkit.ts-abstract-module
+  skip_cleanup: true
