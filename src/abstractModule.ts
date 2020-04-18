@@ -10,5 +10,5 @@ export abstract class AbstractModule<T> {
   }
 
   public abstract async runModule(): Promise<void>;
-  public abstract async shoutDownModule(): Promise<void>;
+  public abstract async shutdownModule(): Promise<void>;
 }
